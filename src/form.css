@@ -1,14 +1,40 @@
-form {
+.profile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 300px;
-    margin: 0 auto;
 }
 
-.row {
+.profile h2 {
+    float: left;
+}
+
+.profile img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 100%;
+}
+
+form {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto auto;
+    padding: 20px;
+}
+
+.locationRow,
+.namesRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fastName,
+.left,
+.right,
+.lastName {
+    width: 45%;
     gap: 10px;
 }
 
@@ -19,21 +45,38 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
+    width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #86bec5;
+    background: #86bec515;
     border-radius: 4px;
 }
 
 .errorFastName,
 .errorLastName,
 .errorContactNumber,
-.errorPasword {
+.errorPasword,
+.errorCountry,
+.errorCity,
+.errorZipCode,
+.errorState {
     color: red;
     font-size: 14px;
     margin-top: 5px;
 }
 
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
 #enviar {
+    width: 100%;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
