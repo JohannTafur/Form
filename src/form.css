@@ -65,11 +65,7 @@ input[type="password"] {
     margin-top: 5px;
 }
 
-.right {
-    display: flex;
-    flex-direction: column;
-}
-
+.right,
 .left {
     display: flex;
     flex-direction: column;
